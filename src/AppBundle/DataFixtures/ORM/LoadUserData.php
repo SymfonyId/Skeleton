@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfonian\Indonesia\AdminBundle\Entity\User;
+use AppBundle\Entity\User;
 
 final class LoadUserData implements FixtureInterface, ContainerAwareInterface
 {

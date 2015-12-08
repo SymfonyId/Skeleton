@@ -31,7 +31,7 @@ class SkeletonSetupCommand extends ContainerAwareCommand
         $loadFixtures->run($input, $output);
 
         $output->writeln('<info>SIAB Skeleton sudah siap digunakan...</info>');
-        $output->writeln('<info>Jalankan: php app/console server:run</info>');
+        $output->writeln('<info>Jalankan: php bin/console server:run</info>');
         $output->writeln('<info>Username dan password: siab</info>');
     }
 }

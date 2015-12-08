@@ -37,7 +37,7 @@ symfonyid_admin:
     security:
         user:
             form_class: symfonian_id.admin.user_form
-            entity_class: Symfonian\Indonesia\AdminBundle\Entity\User
+            entity_class: AppBundle\Entity\User
     grid_action:
         show: true
         edit: true
@@ -50,4 +50,4 @@ symfonyid_admin:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Symfonian\Indonesia\AdminBundle\Entity\User
+    user_class: AppBundle\Entity\User
