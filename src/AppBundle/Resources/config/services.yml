@@ -1,0 +1,17 @@
+services:
+    app.menu:
+        class: AppBundle\Menu\Builder
+        arguments:
+            - '@router'
+            - '@service_container'
+
+    app.main_menu:
+        class: Knp\Menu\MenuItem
+        factory:
+            - '@app.menu'
+            - mainMenu
+        arguments:
+            - '@knp_menu.factory'
+            - []
+        tags:
+            - { name: knp_menu.menu, alias: app_main_menu }

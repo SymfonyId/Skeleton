@@ -1,0 +1,7 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type:     annotation
+
+_symfonian_indonesia:
+    resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'
+    prefix: /admin
