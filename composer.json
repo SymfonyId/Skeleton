@@ -1,5 +1,5 @@
 {
-    "name": "aden/skeleton",
+    "name": "symfonyid/skeleton",
     "license": "proprietary",
     "type": "project",
     "autoload": {
