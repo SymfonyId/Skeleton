@@ -15,10 +15,14 @@ security:
             pattern: ^/
             form_login:
                 provider: fos_userbundle
-            logout:       true
+                login_path: /admin/login
+                check_path: /admin/login_check
+            logout:
+                path: /admin/logout
+                target: /
             anonymous:    true
             remember_me:
-                secret:      "%secret%"
+                secret:   "%secret%"
                 lifetime: 31536000 # 365 days in seconds
                 path:     /
                 domain:   ~
@@ -31,8 +35,5 @@ security:
         - { path: ^/fonts*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/plugins*, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/_wdt*, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
-        - { path: ^/, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
+        - { path: ^/admin/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
