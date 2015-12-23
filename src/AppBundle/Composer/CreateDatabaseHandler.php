@@ -14,16 +14,10 @@ class CreateDatabaseHandler extends ScriptHandler
     public static function createDatabase(CommandEvent $event)
     {
         $options = self::getOptions($event);
-        $appDir = $options['symfony-app-dir'];
-
-        if (!is_dir($appDir)) {
-            echo 'The symfony-app-dir ('.$appDir.') specified in composer.json was not found in '.getcwd().', can not clear the cache.'.PHP_EOL;
-
-            return;
-        }
+        $consoleDir = static::getConsoleDir($event, 'clear the cache');
 
         try {
-            static::executeCommand($event, $appDir, 'doctrine:database:create', $options['process-timeout']);
+            static::executeCommand($event, $consoleDir, 'doctrine:database:create', $options['process-timeout']);
         } catch (\Exception $e) {
         }
     }
