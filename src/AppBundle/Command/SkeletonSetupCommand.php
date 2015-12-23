@@ -26,8 +26,16 @@ class SkeletonSetupCommand extends ContainerAwareCommand
         $createSchema = $this->getApplication()->find('doctrine:schema:create');
         $loadFixtures = $this->getApplication()->find('doctrine:fixtures:load');
 
-        $createDatabase->run($input, $output);
-        $createSchema->run($input, $output);
+        try {
+            $createDatabase->run($input, $output);
+        } catch (\Exception $e) {
+        }
+
+        try {
+            $createSchema->run($input, $output);
+        } catch (\Exception $e) {
+        }
+
         $loadFixtures->run($input, $output);
 
         $output->writeln('<info>SIAB Skeleton sudah siap digunakan...</info>');
