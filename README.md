@@ -9,13 +9,13 @@ Ini adalah skeleton untuk [Symfonian Indonesia Admin Bundle](https://github.com/
 git clone git@github.com:SymfonyId/Skeleton.git
 ```
 
-Kemudian jalankan composer install
+Kemudian jalankan perintah berikut dari root project, jalankan composer install
 
 ```lang=shell
 composer install
 ```
 
-Setelah semuanya terinstall, kemudian jalankan perintah berikut dari root project
+Setelah semuanya terinstall jalankan
 
 ```lang=shell
 php bin/console siab:skeleton:setup
