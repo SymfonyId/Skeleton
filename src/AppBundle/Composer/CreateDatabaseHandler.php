@@ -14,10 +14,12 @@ class CreateDatabaseHandler extends ScriptHandler
     public static function createDatabase(CommandEvent $event)
     {
         $options = self::getOptions($event);
-        $consoleDir = static::getConsoleDir($event, 'clear the cache');
+        $consoleDir = static::getConsoleDir($event, 'Console Directory');
 
         try {
             static::executeCommand($event, $consoleDir, 'doctrine:database:create', $options['process-timeout']);
+            static::executeCommand($event, $consoleDir, 'doctrine:schema:create', $options['process-timeout']);
+            static::executeCommand($event, $consoleDir, 'doctrine:fixtures:load', $options['process-timeout']);
         } catch (\Exception $e) {
         }
     }
