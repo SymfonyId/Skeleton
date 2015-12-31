@@ -9,7 +9,7 @@ Ini adalah skeleton untuk [Symfonian Indonesia Admin Bundle](https://github.com/
 git clone git@github.com:SymfonyId/Skeleton.git
 ```
 
-Kemudian jalankan perintah berikut dari root project, jalankan composer install
+Buat **database** sesuai kebutuhan(hanya database tanpa table apapun). Kemudian jalankan perintah berikut dari root project, jalankan composer install
 
 ```lang=shell
 composer update --prefer-dist
