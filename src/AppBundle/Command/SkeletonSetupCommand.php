@@ -22,20 +22,10 @@ class SkeletonSetupCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $createDatabase = $this->getApplication()->find('doctrine:database:create');
         $createSchema = $this->getApplication()->find('doctrine:schema:create');
         $loadFixtures = $this->getApplication()->find('doctrine:fixtures:load');
 
-        try {
-            $createDatabase->run($input, $output);
-        } catch (\Exception $e) {
-        }
-
-        try {
-            $createSchema->run($input, $output);
-        } catch (\Exception $e) {
-        }
-
+        $createSchema->run($input, $output);
         $loadFixtures->run($input, $output);
 
         $output->writeln('<info>SIAB Skeleton sudah siap digunakan...</info>');
