@@ -25,6 +25,10 @@ knp_menu:
     templating: false
     default_renderer: twig
 
+symfonyid_core:
+    micro_cache:
+        cache_lifetime: 5
+
 symfonyid_admin:
     app_title: 'SIAB Skeleton'
     per_page: 10
