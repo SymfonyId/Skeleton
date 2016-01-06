@@ -3,6 +3,28 @@ Symfonian Indonesia Admin Skeleton
 
 Ini adalah skeleton untuk [Symfonian Indonesia Admin Bundle](https://github.com/SymfonyId/AdminBundle)
 
+###Pre Requirement
+
+- NodeJs
+- UglifyJs
+- UglifyCss
+
+Untuk menginstall diatas, dapat dibaca dokumentasi resmi [Symfony](http://symfony.com/doc/current/cookbook/assetic/uglifyjs.html)
+
+Setting dan ubah bagian berikut sesuai dengan instalasi Anda:
+
+```lang=yml
+assetic:
+    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle']
+    node: /usr/bin/nodejs #change to your path
+    filters:
+        cssrewrite: ~
+        uglifyjs2:
+            bin: /usr/local/bin/uglifyjs #change to your path
+        uglifycss:
+            bin: /usr/local/bin/uglifycss #change to your path
+```
+
 ###Cara Install####
 
 ```lang=shell
