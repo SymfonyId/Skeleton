@@ -1,0 +1,41 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+{% if error %}
+  <p class="login-box-msg text-red">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+{% endif %}
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+  <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+  <div class="form-group has-feedback">
+    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" class="form-control" placeholder="{{ 'security.login.username'|trans }}" />
+    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+  </div>
+  <div class="form-group has-feedback">
+    <input type="password" id="password" name="_password" required="required" class="form-control" placeholder="{{ 'security.login.password'|trans }}">
+    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <div class="checkbox icheck">
+        <label>
+          <input type="checkbox" id="remember_me" name="_remember_me" value="on" /> {{ 'security.login.remember_me'|trans }}
+        </label>
+      </div>
+    </div>
+    <!-- /.col -->
+    <div class="col-xs-4">
+      <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" class="btn btn-primary btn-block btn-flat"/>
+    </div>
+    <!-- /.col -->
+  </div>
+</form>
+
+<div class="padding-top-7">
+  <a href="https://github.com/SymfonyId" target="_blank"><i class="fa fa-github"></i> Symfony Indonesia</a>  
+</div>
+
+{% endblock fos_user_content %}
