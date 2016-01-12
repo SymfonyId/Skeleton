@@ -35,7 +35,7 @@ symfonyid_admin:
     identifier: 'id'
     date_time_format: 'd-m-Y' #php date time format
     menu: app_main_menu
-    profile_fields: ['username', 'email', 'roles']
+    profile_fields: ['full_name', 'username', 'email', 'roles', 'enabled']
     filter: ['name']
     translation_domain: 'SymfonianIndonesiaAdminBundle'
     security:
