@@ -3,7 +3,9 @@ services:
         class: AppBundle\Menu\Builder
         arguments:
             - '@router'
-            - '@service_container'
+            - '@translator'
+            - '@security.authorization_checker'
+            - '%symfonian_id.admin.translation_domain%'
 
     app.main_menu:
         class: Knp\Menu\MenuItem

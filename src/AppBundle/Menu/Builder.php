@@ -7,16 +7,17 @@ namespace AppBundle\Menu;
  */
 
 use Knp\Menu\FactoryInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\Routing\Router;
+use Knp\Menu\ItemInterface;
 use Symfonian\Indonesia\AdminBundle\Menu\Builder as BaseMenu;
-use Knp\Menu\MenuItem;
+use Symfony\Component\Routing\Router;
+use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class Builder extends BaseMenu
 {
-    public function __construct(Router $router, ContainerInterface $container)
+    public function __construct(Router $router, TranslatorInterface $translator, AuthorizationChecker $authorizationChecker, $translationDomain)
     {
-        parent::__construct($router, $container);
+        parent::__construct($router, $translator, $authorizationChecker, $translationDomain);
     }
 
     public function mainMenu(FactoryInterface $factory, array $options)
@@ -28,7 +29,7 @@ class Builder extends BaseMenu
         return $menu;
     }
 
-    protected function addIdNameMenu(MenuItem $menu)
+    protected function addIdNameMenu(ItemInterface $menu)
     {
         $menu->addChild('IdName', array(
             'uri' => '#',

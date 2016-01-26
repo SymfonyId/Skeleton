@@ -10,15 +10,15 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Crud;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Grid;
-use Symfonian\Indonesia\AdminBundle\Annotation\Schema\Page;
+use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
+use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
+use Symfonian\Indonesia\AdminBundle\Annotation\Page;
 
 /**
  * @Route("/contoh")
  *
  * @Page("Sekedar Contoh", description="Ini adalah sekedar contoh CRUD menggunakan SIAB")
- * @Crud("AppBundle\Entity\IdName", showFields={"name"})
+ * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType", showFields={"name"})
  * @Grid({"name"}, filter={"name"})
  */
 class IdNameController extends CrudController
