@@ -32,7 +32,7 @@
         "knplabs/knp-menu-bundle": "dev-master",
         "symfonyid/core-bundle": "dev-master",
         "symfonyid/symfony-bundle-plugins": "dev-master",
-        "friendsofsymfony/user-bundle": "dev-master",
+        "friendsofsymfony/user-bundle": "dev-master#6ccff96434c0ac7fee077d1dce90966341dfd278",
         "friendsofsymfony/jsrouting-bundle": "dev-master",
         "symfonyid/admin-bundle": "dev-master"
     },

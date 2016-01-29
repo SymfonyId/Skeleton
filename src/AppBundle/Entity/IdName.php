@@ -7,8 +7,9 @@ namespace AppBundle\Entity;
  */
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfonian\Indonesia\AdminBundle\Grid\Column;
+use Symfonian\Indonesia\AdminBundle\Grid\Filter;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
-use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
@@ -24,6 +25,8 @@ class IdName implements EntityInterface
     protected $id;
 
     /**
+     * @Column()
+     * @Filter()
      * @ORM\Column(name="program_name", type="string", length=77)
      */
     protected $name;

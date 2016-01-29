@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "162cb7ce20260c5073ff09913fd11ffd",
-    "content-hash": "dd5ec4e487595645c2a8ca5824e1d54d",
+    "hash": "ede963c512e6b10f553a3dcc83679248",
+    "content-hash": "24bf3728502a4c4e9ae3f60b2d18b9bb",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -492,16 +492,16 @@
         },
         {
             "name": "doctrine/doctrine-cache-bundle",
-            "version": "1.2.2",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineCacheBundle.git",
-                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a"
+                "reference": "18c600a9b82f6454d2e81ca4957cdd56a1cf3504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/030ff41ef1db66370b36467086bfb817a661fe6a",
-                "reference": "030ff41ef1db66370b36467086bfb817a661fe6a",
+                "url": "https://api.github.com/repos/doctrine/DoctrineCacheBundle/zipball/18c600a9b82f6454d2e81ca4957cdd56a1cf3504",
+                "reference": "18c600a9b82f6454d2e81ca4957cdd56a1cf3504",
                 "shasum": ""
             },
             "require": {
@@ -515,6 +515,7 @@
                 "instaclick/object-calisthenics-sniffs": "dev-master",
                 "instaclick/symfony2-coding-standard": "dev-remaster",
                 "phpunit/phpunit": "~4",
+                "predis/predis": "~0.8",
                 "satooshi/php-coveralls": "~0.6.1",
                 "squizlabs/php_codesniffer": "~1.5",
                 "symfony/console": "~2.2|~3.0",
@@ -575,7 +576,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2015-11-27 04:59:07"
+            "time": "2016-01-26 17:28:51"
         },
         {
             "name": "doctrine/doctrine-fixtures-bundle",
@@ -954,7 +955,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/6ccff96434c0ac7fee077d1dce90966341dfd278",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/8f1fc2273b37c61ddcc1620abf4500320a23763e",
                 "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278",
                 "shasum": ""
             },
@@ -1011,7 +1012,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-01-08 10:46:39"
+            "time": "2016-01-27 09:36:48"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2412,12 +2413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "9921ffe706802224a335807c973f639154d9bf75"
+                "reference": "913eecb0748e49772795274cb039e730fc40173c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/9921ffe706802224a335807c973f639154d9bf75",
-                "reference": "9921ffe706802224a335807c973f639154d9bf75",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/913eecb0748e49772795274cb039e730fc40173c",
+                "reference": "913eecb0748e49772795274cb039e730fc40173c",
                 "shasum": ""
             },
             "require": {
@@ -2436,6 +2437,9 @@
                 "symfony/symfony": "3.0.*",
                 "symfonyid/core-bundle": "dev-master",
                 "symfonyid/symfony-bundle-plugins": "dev-master"
+            },
+            "require-dev": {
+                "sensio/generator-bundle": "^3.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2470,7 +2474,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-26 07:01:43"
+            "time": "2016-01-29 11:13:54"
         },
         {
             "name": "symfonyid/core-bundle",
