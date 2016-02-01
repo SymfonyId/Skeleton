@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ede963c512e6b10f553a3dcc83679248",
-    "content-hash": "24bf3728502a4c4e9ae3f60b2d18b9bb",
+    "hash": "8f24f0c9038fe071a37f6906dc32abf2",
+    "content-hash": "261d42a1e81922236d2a83b0621b0e47",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1523,16 +1523,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
+                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
-                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/e6f80ab77885151908d0ec743689ca700886e8b0",
+                "reference": "e6f80ab77885151908d0ec743689ca700886e8b0",
                 "shasum": ""
             },
             "require": {
@@ -1567,7 +1567,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-01-06 13:31:20"
+            "time": "2016-01-29 16:19:52"
         },
         {
             "name": "psr/log",
@@ -2409,16 +2409,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "dev-master",
+            "version": "5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "913eecb0748e49772795274cb039e730fc40173c"
+                "reference": "677d4ae3b43d9d9c5d18669b6050c31ec0f59db4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/913eecb0748e49772795274cb039e730fc40173c",
-                "reference": "913eecb0748e49772795274cb039e730fc40173c",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/677d4ae3b43d9d9c5d18669b6050c31ec0f59db4",
+                "reference": "677d4ae3b43d9d9c5d18669b6050c31ec0f59db4",
                 "shasum": ""
             },
             "require": {
@@ -2474,7 +2474,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-01-29 11:13:54"
+            "time": "2016-02-01 09:30:14"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2811,8 +2811,7 @@
         "symfonyid/core-bundle": 20,
         "symfonyid/symfony-bundle-plugins": 20,
         "friendsofsymfony/user-bundle": 20,
-        "friendsofsymfony/jsrouting-bundle": 20,
-        "symfonyid/admin-bundle": 20
+        "friendsofsymfony/jsrouting-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
