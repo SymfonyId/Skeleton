@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8f24f0c9038fe071a37f6906dc32abf2",
-    "content-hash": "261d42a1e81922236d2a83b0621b0e47",
+    "hash": "ede963c512e6b10f553a3dcc83679248",
+    "content-hash": "24bf3728502a4c4e9ae3f60b2d18b9bb",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2409,16 +2409,16 @@
         },
         {
             "name": "symfonyid/admin-bundle",
-            "version": "5.1.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "7ac825de667891acd733d79a495c364445c503e1"
+                "reference": "9b0b60695b219225c78df4b6a998a1b177389c66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/7ac825de667891acd733d79a495c364445c503e1",
-                "reference": "7ac825de667891acd733d79a495c364445c503e1",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/9b0b60695b219225c78df4b6a998a1b177389c66",
+                "reference": "9b0b60695b219225c78df4b6a998a1b177389c66",
                 "shasum": ""
             },
             "require": {
@@ -2474,7 +2474,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-01 09:39:59"
+            "time": "2016-02-01 10:33:37"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2811,7 +2811,8 @@
         "symfonyid/core-bundle": 20,
         "symfonyid/symfony-bundle-plugins": 20,
         "friendsofsymfony/user-bundle": 20,
-        "friendsofsymfony/jsrouting-bundle": 20
+        "friendsofsymfony/jsrouting-bundle": 20,
+        "symfonyid/admin-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -6,13 +6,10 @@ namespace AppBundle\Controller;
  * Url: http://blog.khodam.org
  */
 
-use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
-
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-
 use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
-use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
 use Symfonian\Indonesia\AdminBundle\Annotation\Page;
+use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 /**
  * @Route("/contoh")
@@ -22,4 +19,8 @@ use Symfonian\Indonesia\AdminBundle\Annotation\Page;
  */
 class IdNameController extends CrudController
 {
+    protected function getClassName()
+    {
+        return __CLASS__;
+    }
 }
