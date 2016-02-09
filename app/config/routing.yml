@@ -1,6 +1,7 @@
 app:
     resource: '@AppBundle/Controller/'
-    type:     annotation
+    type:     siab
+    prefix: /
 
 _symfonian_indonesia:
     resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'

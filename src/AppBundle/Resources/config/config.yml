@@ -1,5 +1,5 @@
 assetic:
-    bundles: ['OroriStockBundle', 'SymfonianIndonesiaAdminBundle', 'FOSUserBundle']
+    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle', 'FOSUserBundle']
     node: /usr/bin/nodejs #change to your path
     filters:
         cssrewrite: ~
@@ -41,7 +41,7 @@ symfonyid_admin:
     translation_domain: 'SymfonianIndonesiaAdminBundle'
     user:
         form_class: symfonian_id.admin.user_form
-        entity_class: Orori\StockBundle\Entity\User
+        entity_class: AppBundle\Entity\User
     themes:
         dashboard: 'SymfonianIndonesiaAdminBundle:Index:index.html.twig'
         form_theme: 'SymfonianIndonesiaAdminBundle:Form:fields.html.twig'
@@ -50,4 +50,4 @@ symfonyid_admin:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Orori\StockBundle\Entity\User
+    user_class: AppBundle\Entity\User

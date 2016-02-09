@@ -23,7 +23,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Symfonian\Indonesia\CoreBundle\SymfonianIndonesiaCoreBundle(),
-            new Symfonian\Indonesia\AdminBundle\SymfonianIndonesiaAdminBundle(),
+            new Symfonian\Indonesia\AdminBundle\SymfonianIndonesiaAdminBundle($this),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
