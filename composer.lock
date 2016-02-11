@@ -1013,7 +1013,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-02-05 08:53:49"
+            "time": "2016-01-27 09:36:48"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -2466,12 +2466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "e8783030f324cde97690efb744c8e0bcb7e35403"
+                "reference": "d055ee1096bf2916e17682a2991fb793f26b3c0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e8783030f324cde97690efb744c8e0bcb7e35403",
-                "reference": "e8783030f324cde97690efb744c8e0bcb7e35403",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/d055ee1096bf2916e17682a2991fb793f26b3c0e",
+                "reference": "d055ee1096bf2916e17682a2991fb793f26b3c0e",
                 "shasum": ""
             },
             "require": {
@@ -2492,10 +2492,14 @@
                 "symfonyid/core-bundle": "dev-master",
                 "symfonyid/symfony-bundle-plugins": "dev-master"
             },
+            "require-dev": {
+                "phpunit/phpunit": "5.0.*"
+            },
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "Symfonian\\Indonesia\\AdminBundle\\": ""
+                    "Symfonian\\Indonesia\\AdminBundle\\": "",
+                    "Tests\\Symfonian\\Indonesia\\AdminBundle\\": "tests"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2525,7 +2529,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-09 13:14:56"
+            "time": "2016-02-11 11:23:32"
         },
         {
             "name": "symfonyid/core-bundle",
