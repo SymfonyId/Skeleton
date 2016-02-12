@@ -956,7 +956,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/140cc28026304d3023c880f441689986f99b913b",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/e770bfa2fd0fc665f55cd7cfeb34bddeffb892f4",
                 "reference": "6ccff96434c0ac7fee077d1dce90966341dfd278",
                 "shasum": ""
             },
@@ -2466,12 +2466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "d055ee1096bf2916e17682a2991fb793f26b3c0e"
+                "reference": "4861a762b4722082391bd499ec6952bf1085471c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/d055ee1096bf2916e17682a2991fb793f26b3c0e",
-                "reference": "d055ee1096bf2916e17682a2991fb793f26b3c0e",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/4861a762b4722082391bd499ec6952bf1085471c",
+                "reference": "4861a762b4722082391bd499ec6952bf1085471c",
                 "shasum": ""
             },
             "require": {
@@ -2529,7 +2529,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-11 11:23:32"
+            "time": "2016-02-12 08:12:28"
         },
         {
             "name": "symfonyid/core-bundle",
