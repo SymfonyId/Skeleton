@@ -1016,6 +1016,177 @@
             "time": "2016-01-27 09:36:48"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-11-23 00:47:50"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2015-10-15 22:28:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "reference": "2e89629ff057ebb49492ba08e6995d3a6a80021b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-02-18 21:54:00"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -1256,12 +1427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "96a6b9630e0f150f38ae167b3ef22955d8cdfab5"
+                "reference": "3cee352312736ba645759624a73be8e048cc83f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/96a6b9630e0f150f38ae167b3ef22955d8cdfab5",
-                "reference": "96a6b9630e0f150f38ae167b3ef22955d8cdfab5",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/3cee352312736ba645759624a73be8e048cc83f2",
+                "reference": "3cee352312736ba645759624a73be8e048cc83f2",
                 "shasum": ""
             },
             "require": {
@@ -1305,7 +1476,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2016-01-11 09:37:38"
+            "time": "2016-02-15 13:15:26"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -1571,6 +1742,55 @@
             "time": "2016-02-06 03:52:05"
         },
         {
+            "name": "psr/http-message",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2015-05-04 20:22:00"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -1610,16 +1830,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.3",
+            "version": "v5.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "419c1824af940e2be0f833aca2327e1181a6b503"
+                "reference": "2c167426fc24f9de116345195bc1697a748ee847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/419c1824af940e2be0f833aca2327e1181a6b503",
-                "reference": "419c1824af940e2be0f833aca2327e1181a6b503",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/2c167426fc24f9de116345195bc1697a748ee847",
+                "reference": "2c167426fc24f9de116345195bc1697a748ee847",
                 "shasum": ""
             },
             "require": {
@@ -1658,7 +1878,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2015-12-18 17:44:11"
+            "time": "2016-02-12 16:21:30"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2466,12 +2686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "4861a762b4722082391bd499ec6952bf1085471c"
+                "reference": "44bb740a05f948685df38308638c0f8b049c22ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/4861a762b4722082391bd499ec6952bf1085471c",
-                "reference": "4861a762b4722082391bd499ec6952bf1085471c",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/44bb740a05f948685df38308638c0f8b049c22ae",
+                "reference": "44bb740a05f948685df38308638c0f8b049c22ae",
                 "shasum": ""
             },
             "require": {
@@ -2480,6 +2700,7 @@
                 "doctrine/orm": "^2.5",
                 "friendsofsymfony/jsrouting-bundle": "dev-master",
                 "friendsofsymfony/user-bundle": "dev-master",
+                "guzzlehttp/guzzle": "^6.0",
                 "knplabs/knp-menu-bundle": "dev-master",
                 "knplabs/knp-paginator-bundle": "dev-master",
                 "php": ">=5.5.9",
@@ -2499,7 +2720,7 @@
             "autoload": {
                 "psr-4": {
                     "Symfonian\\Indonesia\\AdminBundle\\": "",
-                    "Tests\\Symfonian\\Indonesia\\AdminBundle\\": "tests"
+                    "Tests\\Symfonian\\Indonesia\\AdminBundle\\": "Tests"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2529,7 +2750,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-12 08:12:28"
+            "time": "2016-02-19 09:40:23"
         },
         {
             "name": "symfonyid/core-bundle",
@@ -2537,12 +2758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/CoreBundle.git",
-                "reference": "58f214b4b3434649754dbd30971a1e74213b1979"
+                "reference": "b9c341060d16f14873444c1dd4eeb3ceb8c836cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/58f214b4b3434649754dbd30971a1e74213b1979",
-                "reference": "58f214b4b3434649754dbd30971a1e74213b1979",
+                "url": "https://api.github.com/repos/SymfonyId/CoreBundle/zipball/b9c341060d16f14873444c1dd4eeb3ceb8c836cb",
+                "reference": "b9c341060d16f14873444c1dd4eeb3ceb8c836cb",
                 "shasum": ""
             },
             "require": {
@@ -2584,7 +2805,7 @@
                 "ihsanudin",
                 "toolkit"
             ],
-            "time": "2016-01-21 06:42:59"
+            "time": "2016-02-19 06:52:41"
         },
         {
             "name": "symfonyid/symfony-bundle-plugins",
