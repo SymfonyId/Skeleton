@@ -16,7 +16,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Route("/idname")
  *
  * @Page("IdName", description="Description of IdName")
- * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType")
+ * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType", menuIcon="fa-bars")
  */
 class IdNameController extends CrudController
 {
