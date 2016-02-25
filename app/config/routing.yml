@@ -6,7 +6,3 @@ app:
 _symfonian_indonesia:
     resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'
     prefix: /admin
-
-_errors:
-    resource: "@TwigBundle/Resources/config/routing/errors.xml"
-    prefix:   /_error
