@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Something wrong</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{- asset('bundles/symfonianindonesiaadmin/css/bootstrap.min.css') -}}" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body{
+                margin-top: 100px;
+                background-color: #d2d6de;
+                color : #757B86
+            }
+
+            h3{
+                margin: 5px
+            }
+
+            #btn-area{
+                margin-top: 50px;
+            }
+
+            #socmed{
+                margin-top: 10px;
+            }
+
+            #socmed a{
+                text-decoration: none;
+                margin: 10px
+            }
+
+        </style>
+    </head>
+    <body class="text-center">
+        <h3 class="text-uppercase font-bold">Something went wrong</h3>
+        <h3>Let's wait for seconds while drinking coffee</h3>
+        <img src="{{ asset('bundles/app/img/coffee.png') }}" />
+        <div id="btn-area">
+            <a class="btn btn-success" href="{{ path('homepage') }}">Okay, nothing to do here. Let's come home</a>
+        </div>
+        <div id="socmed">
+            <a  href="https://www.facebook.com/groups/symfonian.indo" target="_blank"><i class="fa fa-facebook"></i> Facebook Group</a>
+            <a  href="https://github.com/SymfonyId" target="_blank"><i class="fa fa-github"></i> Github</a> 
+        </div>
+    </body>
+</html>
