@@ -1944,16 +1944,16 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530"
+                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/5274eafa251359087230bade2ff35dd6cec2e530",
-                "reference": "5274eafa251359087230bade2ff35dd6cec2e530",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/ac91535054d025937d897d78ebb5fc2da5e955a4",
+                "reference": "ac91535054d025937d897d78ebb5fc2da5e955a4",
                 "shasum": ""
             },
             "require": {
@@ -1992,7 +1992,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2016-01-05 16:30:36"
+            "time": "2016-02-26 04:36:01"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -2693,12 +2693,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/AdminBundle.git",
-                "reference": "57cf581fd52461c4a785c4f58a2f35239bf8f74a"
+                "reference": "e4c6445f577fc00bdcff4f5987b172cff5c3e76f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/57cf581fd52461c4a785c4f58a2f35239bf8f74a",
-                "reference": "57cf581fd52461c4a785c4f58a2f35239bf8f74a",
+                "url": "https://api.github.com/repos/SymfonyId/AdminBundle/zipball/e4c6445f577fc00bdcff4f5987b172cff5c3e76f",
+                "reference": "e4c6445f577fc00bdcff4f5987b172cff5c3e76f",
                 "shasum": ""
             },
             "require": {
@@ -2757,7 +2757,7 @@
                 "simple admin",
                 "symfony admin"
             ],
-            "time": "2016-02-25 16:25:33"
+            "time": "2016-02-26 10:14:31"
         },
         {
             "name": "symfonyid/core-bundle",
