@@ -4,11 +4,26 @@ namespace AppBundle\EventListener;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+use Symfony\Component\HttpKernel\KernelInterface;
 
 class ExceptionListener
 {
+    /**
+     * @var KernelInterface
+     */
+    private $kernel;
+
+    public function __construct(KernelInterface $kernel)
+    {
+        $this->kernel = $kernel;
+    }
+
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
+        if ('prod' !== $this->kernel->getEnvironment()) {
+            return;
+        }
+
         $exception = $event->getException();
         $response = new Response();
         $response->setStatusCode(Response::HTTP_INTERNAL_SERVER_ERROR);

@@ -1,5 +1,7 @@
 services:
     app.exception_listener:
         class: AppBundle\EventListener\ExceptionListener
+        arguments:
+            - '@kernel'
         tags:
             - { name: kernel.event_listener, event: kernel.exception }
