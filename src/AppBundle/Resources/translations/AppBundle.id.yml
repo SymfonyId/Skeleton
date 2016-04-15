@@ -81,6 +81,7 @@ entity:
         full_name: 'Nama Lengkap'
         avatar: 'Foto Avatar'
         username: 'Nama Pengguna'
+        name: 'Nama'
         email: 'Alamat Email'
         roles: 'Hak Akses'
         enabled: 'Aktif'
