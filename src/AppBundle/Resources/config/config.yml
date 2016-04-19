@@ -3,6 +3,7 @@ assetic:
 #    node: /usr/bin/nodejs #change to your path
 #    filters:
 #        cssrewrite: ~
+#            apply_to: '\.css$'
 #        uglifyjs2:
 #            bin: /usr/local/bin/uglifyjs #change to your path
 #            apply_to: '\.js$'
