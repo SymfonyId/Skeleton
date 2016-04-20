@@ -35,7 +35,7 @@
         "symfonyid/symfony-bundle-plugins": "dev-master",
         "friendsofsymfony/user-bundle": "dev-master",
         "friendsofsymfony/jsrouting-bundle": "dev-master",
-        "symfonyid/admin-bundle": "dev-master"
+        "symfonyid/admin-bundle": "^5.3.*"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^2.7"
