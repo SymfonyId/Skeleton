@@ -1,8 +1,8 @@
 assetic:
     bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle', 'FOSUserBundle']
 #    node: /usr/bin/nodejs #change to your path
-#    filters:
-#        cssrewrite: ~
+    filters:
+        cssrewrite:
             apply_to: '\.css$'
 #        uglifyjs2:
 #            bin: /usr/local/bin/uglifyjs #change to your path
