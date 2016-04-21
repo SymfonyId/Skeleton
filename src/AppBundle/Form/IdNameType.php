@@ -20,14 +20,9 @@ class IdNameType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder            ->add('name', null, array(
+        $builder->add('name', null, array(
                 'attr' => array(
                     'class' => 'form-control',
-                ),
-            ))            ->add('save', SubmitType::class, array(
-                'label' => 'Submit',
-                'attr' => array(
-                    'class' => 'btn btn-primary',
                 ),
             ))
         ;
