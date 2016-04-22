@@ -1,15 +1,15 @@
 assetic:
     bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle', 'FOSUserBundle']
-#    node: /usr/bin/nodejs #change to your path
+    node: /usr/bin/nodejs #change to your path
     filters:
         cssrewrite:
             apply_to: '\.css$'
-#        uglifyjs2:
-#            bin: /usr/local/bin/uglifyjs #change to your path
-#            apply_to: '\.js$'
-#        uglifycss:
-#            bin: /usr/local/bin/uglifycss #change to your path
-#            apply_to: '\.css$'
+        uglifyjs2:
+            bin: /usr/local/bin/uglifyjs #change to your path
+            apply_to: '\.js$'
+        uglifycss:
+            bin: /usr/local/bin/uglifycss #change to your path
+            apply_to: '\.css$'
 
 framework:
     translator: { fallbacks: ["%locale%"] }
@@ -39,7 +39,7 @@ symfonyid_admin:
     identifier: 'id'
     date_time_format: 'd-m-Y' #php date time format
     profile_fields: ['full_name', 'username', 'email', 'roles', 'enabled']
-    filter: ['name']
+    filter: ['nama']
     translation_domain: 'AppBundle'
     user:
         form_class: symfonian_id.admin.user_form
@@ -53,3 +53,17 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: AppBundle\Entity\User
+
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            dsn: redis://localhost
+
+    session:
+        client: default
+
+framework:
+    session:
+        handler_id: snc_redis.session.handler

@@ -9,13 +9,14 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfonian\Indonesia\AdminBundle\Grid\Column;
 use Symfonian\Indonesia\AdminBundle\Grid\Filter;
+use Symfonian\Indonesia\AdminBundle\Model\BulkDeletableInterface;
 use Symfonian\Indonesia\CoreBundle\Toolkit\DoctrineManager\Model\EntityInterface;
 
 /**
  * @ORM\Entity
  * @ORM\Table(name="siab_idname")
  */
-class IdName implements EntityInterface
+class IdName implements EntityInterface, BulkDeletableInterface
 {
     /**
      * @ORM\Id
@@ -46,5 +47,13 @@ class IdName implements EntityInterface
     public function getName()
     {
         return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDeleteInformation()
+    {
+        return $this->getName();
     }
 }
