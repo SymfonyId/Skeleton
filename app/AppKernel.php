@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Symfonian\Indonesia\CoreBundle\SymfonianIndonesiaCoreBundle(),
             new Symfonian\Indonesia\AdminBundle\SymfonianIndonesiaAdminBundle($this),
+            new Snc\RedisBundle\SncRedisBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {
