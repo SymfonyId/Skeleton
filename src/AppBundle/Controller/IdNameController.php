@@ -10,6 +10,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
 use Symfonian\Indonesia\AdminBundle\Annotation\Page;
+use Symfonian\Indonesia\AdminBundle\Annotation\Plugins;
 use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
 /**
@@ -17,6 +18,7 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  *
  * @Page("IdName", description="Description of IdName")
  * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType", menuIcon="fa-bars")
+ * @Plugins(bulkInsert=true)
  */
 class IdNameController extends CrudController
 {

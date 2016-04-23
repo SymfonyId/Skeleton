@@ -39,7 +39,7 @@ symfonyid_admin:
     identifier: 'id'
     date_time_format: 'd-m-Y' #php date time format
     profile_fields: ['full_name', 'username', 'email', 'roles', 'enabled']
-    filter: ['nama']
+    filter: ['name']
     translation_domain: 'AppBundle'
     user:
         form_class: symfonian_id.admin.user_form
