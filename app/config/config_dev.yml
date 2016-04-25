@@ -43,3 +43,6 @@ monolog:
 
 #swiftmailer:
 #    delivery_address: me@example.com
+
+app:
+    redis_dsn: 'redis://localhost'
