@@ -61,4 +61,5 @@ snc_redis:
             alias: default
             dsn: redis://localhost
     session:
+        prefix: changeToYouPrefix
         client: default
