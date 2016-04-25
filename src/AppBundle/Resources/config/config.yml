@@ -60,6 +60,5 @@ snc_redis:
             type: predis
             alias: default
             dsn: redis://localhost
-
     session:
         client: default
