@@ -51,6 +51,7 @@ page:
     change_password:
         title: 'Ubah Password'
         description: ''
+    bulk_insert: 'Insert Cepat'
 
 menu:
     dashboard: 'Home'
