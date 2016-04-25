@@ -27,6 +27,7 @@ final class LoadUserData implements FixtureInterface, ContainerAwareInterface
     public function load(ObjectManager $manager)
     {
         $userPassword = 'siab';
+        $date = new \DateTime();
 
         $user = new User();
         $user->setUsername($userPassword);
@@ -35,6 +36,10 @@ final class LoadUserData implements FixtureInterface, ContainerAwareInterface
         $user->setRoles(array('ROLE_SUPER_ADMIN'));
         $user->setPlainPassword($userPassword);
         $user->setEnabled(true);
+        $user->setCreatedAt($date);
+        $user->setUpdatedAt($date);
+        $user->setCreatedBy('SYSTEM');
+        $user->setUpdatedBy('SYSTEM');
 
         $manager->persist($user);
         $manager->flush();
