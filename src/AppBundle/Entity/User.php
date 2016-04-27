@@ -8,7 +8,7 @@ namespace AppBundle\Entity;
  */
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfonian\Indonesia\AdminBundle\Model\AdvancedUser as BaseUser;
+use Symfonian\Indonesia\AdminBundle\Model\UserTimestampable as BaseUser;
 
 /**
  * @ORM\Entity()
