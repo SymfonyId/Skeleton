@@ -32,7 +32,7 @@ class IdNameType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'AppBundle\Entity\IdName'
+            'data_class' => 'AppBundle\Entity\IdName',
         ));
     }
 }
