@@ -19,6 +19,11 @@ message:
     old_password_invalid: 'Password lama yang Anda masukkan salah'
     cant_delete_your_self: 'Anda tidak dapat menghapus data Anda sendiri'
     select_empty: '---Pilih Salah Satu---'
+    delete_failed: 'Data tidak dapat dihapus karena telah berelasi atau sudah dihapus sebelumnya'
+    delete_bulk_failed: 'Tidak ada data yang dapat dihapus. Kemungkinan telah berelasi atau sudah dihapus sebelumnya'
+    delete_bulk: 'Berhasil menghapus %deleted% dari %count% dengan rincian [<b>%data%</b>]'
+    insert_bulk_failed: 'Tidak ada data yang dapat disimpan. Pastikan data yang diinput sudah benar'
+    delete_bulk: 'Berhasil menghapus %inserted% dari %count% dengan rincian [<b>%data%</b>]'
 
 action:
     login: 'Masuk'
@@ -31,6 +36,7 @@ action:
     edit: 'Edit'
     delete: 'Hapus'
     submit: 'Simpan'
+    submit_all: 'Simpan Semua'
 
 link:
     home: 'DASHBOARD'
@@ -63,7 +69,6 @@ menu:
         user: 'Pengguna'
         home: 'Dashboard'
         profile: 'Profil'
-        idname: 'ID Name'
 
 form:
     label:
@@ -82,7 +87,6 @@ entity:
         full_name: 'Nama Lengkap'
         avatar: 'Foto Avatar'
         username: 'Nama Pengguna'
-        name: 'Nama'
         email: 'Alamat Email'
         roles: 'Hak Akses'
         enabled: 'Aktif'
