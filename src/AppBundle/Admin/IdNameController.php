@@ -9,6 +9,7 @@ namespace AppBundle\Admin;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfonian\Indonesia\AdminBundle\Annotation\Crud;
+use Symfonian\Indonesia\AdminBundle\Annotation\Grid;
 use Symfonian\Indonesia\AdminBundle\Annotation\Page;
 use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
 
@@ -16,7 +17,8 @@ use Symfonian\Indonesia\AdminBundle\Controller\CrudController;
  * @Route("/idname")
  *
  * @Page("IdName", description="Description of IdName")
- * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType", menuIcon="fa-bars")
+ * @Crud("AppBundle\Entity\IdName", form="AppBundle\Form\IdNameType")
+ * @Grid({"name"}, filters={"name"})
  */
 class IdNameController extends CrudController
 {
