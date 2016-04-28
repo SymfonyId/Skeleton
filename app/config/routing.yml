@@ -1,6 +1,10 @@
 app:
+  resource: '@AppBundle/Controller/'
+  type: annotation
+
+admin:
     resource: '@AppBundle/Admin/'
-    type:     siab
+    type: siab
     prefix: /admin
 
 _symfonian_indonesia:
