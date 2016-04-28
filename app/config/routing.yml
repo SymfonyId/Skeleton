@@ -1,7 +1,7 @@
 app:
-    resource: '@AppBundle/Controller/'
+    resource: '@AppBundle/Admin/'
     type:     siab
-    prefix: /
+    prefix: /admin
 
 _symfonian_indonesia:
     resource: '@SymfonianIndonesiaAdminBundle/Resources/config/routing.yml'
