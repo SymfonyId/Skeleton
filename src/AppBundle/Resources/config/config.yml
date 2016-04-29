@@ -28,10 +28,6 @@ knp_menu:
     templating: false
     default_renderer: twig
 
-symfonyid_core:
-    micro_cache:
-        cache_lifetime: 5
-
 symfonyid_admin:
     app_title: 'SKELETON'
     app_short_title: 'SFID'
