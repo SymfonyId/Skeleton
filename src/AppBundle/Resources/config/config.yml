@@ -33,6 +33,7 @@ symfonyid_admin:
     app_short_title: 'SFID'
     per_page: 10
     identifier: 'id'
+    driver: orm
     date_time_format: 'd-m-Y' #php date time format
     profile_fields: ['full_name', 'username', 'email', 'roles', 'enabled']
     filter: ['name']

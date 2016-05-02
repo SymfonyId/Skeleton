@@ -7,27 +7,11 @@ Ini adalah skeleton untuk [Symfonian Indonesia Admin Bundle](https://github.com/
 
 ###Pre Requirement
 
-- NodeJs
-- UglifyJs
-- UglifyCss
+- [Redis Server](http://redis.io/) untuk menyimpan session
+- [NodeJS](https://nodejs.org/)
 
-Untuk menginstall diatas, dapat dibaca dokumentasi resmi [Symfony](http://symfony.com/doc/current/cookbook/assetic/uglifyjs.html)
 
-Setting dan ubah bagian berikut sesuai dengan instalasi Anda:
-
-```lang=yml
-assetic:
-    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle']
-    node: /usr/bin/nodejs #change to your path
-    filters:
-        cssrewrite: ~
-        uglifyjs2:
-            bin: /usr/local/bin/uglifyjs #change to your path
-        uglifycss:
-            bin: /usr/local/bin/uglifycss #change to your path
-```
-
-###Cara Install####
+###Cara Install
 
 ```lang=shell
 git clone git@github.com:SymfonyId/Skeleton.git
@@ -55,4 +39,23 @@ Buka browser
 
 ```lang=shell
 localhost:8000/admin
+```
+
+
+###Uglify JS & CSS (optional)
+
+Jika ingin menggunakan uglifyJs dan UglifyCss, anda bisa melakukan instalasi sesuai dengan dokumentasi resmi [Symfony](http://symfony.com/doc/current/cookbook/assetic/uglifyjs.html)
+
+Setting dan ubah bagian berikut sesuai dengan instalasi Anda:
+
+```lang=yml
+assetic:
+    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle']
+    node: /usr/bin/nodejs #change to your node path
+    filters:
+        cssrewrite: ~
+        uglifyjs2:
+            bin: /usr/local/bin/uglifyjs #change to your uglifyjs path
+        uglifycss:
+            bin: /usr/local/bin/uglifycss #change to your uglifycss path
 ```
