@@ -12,6 +12,7 @@ env:
 
 services:
     - mysql
+    - redis-server
 
 matrix:
     include:
@@ -28,3 +29,6 @@ before_install:
 
 install:
     - composer update --prefer-dist
+
+script:
+    - redis_cli info
