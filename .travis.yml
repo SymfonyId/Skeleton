@@ -31,4 +31,4 @@ install:
     - composer update --prefer-dist
 
 script:
-    - redis_cli info
+    - redis-cli info
