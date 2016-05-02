@@ -50,7 +50,7 @@ Setting dan ubah bagian berikut sesuai dengan instalasi Anda:
 
 ```lang=yml
 assetic:
-    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle']
+    bundles: ['AppBundle', 'SymfonianIndonesiaAdminBundle', 'FOSUserBundle']
     node: /usr/bin/nodejs #change to your node path
     filters:
         cssrewrite: ~
