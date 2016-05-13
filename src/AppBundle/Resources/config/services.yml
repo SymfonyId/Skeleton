@@ -1,7 +1,9 @@
 services:
-    app.exception_listener:
+    app.listener.exception_listener:
         class: AppBundle\EventListener\ExceptionListener
         arguments:
             - '@kernel'
+            - '@logger'
         tags:
             - { name: kernel.event_listener, event: kernel.exception }
+            - { name: monolog.logger, channel: exception }

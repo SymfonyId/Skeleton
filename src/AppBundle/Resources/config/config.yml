@@ -14,6 +14,15 @@ assetic:
 framework:
     translator: { fallbacks: ["%locale%"] }
 
+monolog:
+    channels: ['exception']
+    handlers:
+        app_exception:
+            type: stream
+            path: %kernel.root_dir%/exception_%kernel.environment%.log
+            level: info
+            channels: [exception]
+
 knp_paginator:
     page_range: 5
     default_options:
