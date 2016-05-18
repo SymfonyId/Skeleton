@@ -2,6 +2,7 @@ Symfonian Indonesia Admin Skeleton
 ==================================
 
 [![Build Status](https://travis-ci.org/SymfonyId/Skeleton.svg?branch=master)](https://travis-ci.org/SymfonyId/Skeleton)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d3f80781-e4e0-49ac-bb6e-cf9a16d585d7/mini.png)](https://insight.sensiolabs.com/projects/d3f80781-e4e0-49ac-bb6e-cf9a16d585d7)
 
 Ini adalah skeleton untuk [Symfonian Indonesia Admin Bundle](https://github.com/SymfonyId/AdminBundle)
 

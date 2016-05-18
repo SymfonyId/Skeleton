@@ -1,5 +1,6 @@
 {
     "name": "symfonyid/skeleton",
+    "description": "Skeleton for Symfony Indonesia Admin Bundle",
     "license": "proprietary",
     "type": "project",
     "autoload": {
